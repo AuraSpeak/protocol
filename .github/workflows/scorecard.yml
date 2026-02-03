@@ -6,13 +6,19 @@ on:
   push:
     branches: [ "main" ]
 
+# Top-level: read-only
 permissions:
   contents: read
-  security-events: write
 
 jobs:
   analysis:
     runs-on: ubuntu-latest
+
+    # Job-level: nur fürs Hochladen der SARIF Results nötig
+    permissions:
+      contents: read
+      security-events: write
+
     steps:
       - uses: actions/checkout@v6
       - uses: ossf/scorecard-action@v2.4.3
