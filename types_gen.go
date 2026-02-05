@@ -12,6 +12,9 @@ const (
 	PacketTypeNone                  PacketType = 0x00
 	PacketTypeClientNeedsDisconnect PacketType = 0x01 // Client needs to disconnect
 
+	// Payload Packets
+	PacketTypeAck PacketType = 0x32 // Ack
+
 )
 
 var (
@@ -20,6 +23,7 @@ var (
 		{PacketType: PacketTypeClientNeedsDisconnect, String: "ClientNeedsDisconnect"},
 		{PacketType: PacketTypeDebugHello, String: "DebugHello"},
 		{PacketType: PacketTypeDebugAny, String: "DebugAny"},
+		{PacketType: PacketTypeAck, String: "Ack"},
 	}
 
 	PacketTypeMapType = func() map[PacketType]string {

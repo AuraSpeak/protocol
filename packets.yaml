@@ -18,3 +18,8 @@ packets:
     value: 0x91
     category: "Debug Packets"
     description: "Debug: Any"
+  
+  - name: Ack
+    value: 0x32
+    category: "Payload Packets"
+    description: "Ack"

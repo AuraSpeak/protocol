@@ -1,0 +1,25 @@
+flags:
+  - name: ACK_REQUIRED
+    bit: 0
+    description: "Requires an Ack from the server"
+  - name: FRAGMENTED
+    bit: 1
+    description: "Fragmented packet"
+  - name: PRIORITY
+    bit: 2
+    description: "Priority packet"
+  - name: SUCCESS
+    bit: 3
+    description: "Success packet"
+  - name: ERROR
+    bit: 4
+    description: "Error packet"
+  - name: WARNING
+    bit: 5
+    description: "Warning packet"
+  - name: INFO
+    bit: 6
+    description: "Info packet"
+  - name: DEBUG
+    bit: 7
+    description: "Debug packet"
